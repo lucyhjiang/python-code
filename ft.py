@@ -1,4 +1,4 @@
-# Discrete Fourier transform demonstration 
+# Discrete Fourier transform demonstration (python v3)
 
 # Initialize the since wave time series to be transformed
 # Pesudo code
@@ -27,7 +27,7 @@ for y in range(N):
 		psum =v[x]*cmath.exp(complex(0, -2*cmath.pi*x*y/N))
 		psum = complex(round(psum.real),round(psum.imag))
 		sum = sum + psum
-		print (psum)
+		# print (psum)
 	vft[y] = 1/N*sum
 	
 # Print calculated loop
